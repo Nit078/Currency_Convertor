@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <style>
+        @media (max-width: 600px) {
+    body {
+      
+        background-color: red;
+    }
+
+} 
+    </style> -->
+</head>
+
+<body>
+    <nav>
+        <div class="logo">My Currency Convertor</div>
+        <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/About Us">About Us</a></li>
+            <li><a href="/Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Choose a Currency to Convert</h1>
+
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity:</label>
+            <input type="number" name="quantity" min="1" max="10" style="width: 23vw;">
+            <label for="Currency">Choose a Currency:</label>
+            <select name="Currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">Us Dollar</option>
+                <option value="EUR">Canada</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="output">
+            <h2>Here is your Converted Currency</h2>
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th> Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+                
+            </table>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <footer>
+        Copyright &copy; All rights reserved;
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
